@@ -43,7 +43,8 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: paymentservice
+        image: docker.io/library/paymentservice:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 50051
         env:

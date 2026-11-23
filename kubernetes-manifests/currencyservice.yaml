@@ -43,7 +43,8 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: currencyservice
+        image: docker.io/library/currencyservice:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - name: grpc
           containerPort: 7000

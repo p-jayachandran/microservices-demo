@@ -43,7 +43,8 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: productcatalogservice
+        image: docker.io/library/productcatalogservice:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3550
         env:

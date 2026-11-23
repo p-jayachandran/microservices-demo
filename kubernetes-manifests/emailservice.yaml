@@ -43,7 +43,8 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: emailservice
+        image: docker.io/library/emailservice:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         env:
